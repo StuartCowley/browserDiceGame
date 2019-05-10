@@ -1,7 +1,7 @@
 <html lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>1 Player Dice Game</title>
+    <title>2 Player Dice Game</title>
     <link rel="stylesheet" type="text/css" href="../css.css" />
   </head>
 
@@ -12,8 +12,14 @@
         <h4>Roll 20 or more to win, roll a one and you lose</h4>
       </div>
       <div class="gameArea">
-        <div class="playerName">Player 1</div>
-        <div id="score" class="text"></div>
+        <div class="playerNameRow">
+          <div id="Player1Name">Player 1</div>
+          <div id="Player2Name">Player 2</div>
+        </div>
+        <div class="scoreRow">
+          <div id="player1Score" class="scoreText"></div>
+          <div id="player2Score" class="scoreText"></div>
+        </div>
         <div class="diceDisplay">
           <img id="dicePic" onclick="changeImage()" src="../img/dice1.png" />
         </div>

@@ -36,8 +36,6 @@ button {
   border-width: thick;
   border-color: black;
 }
-#dicePic {
-}
 
 .gameArea {
   margin: auto;
@@ -62,12 +60,60 @@ h4 {
   margin: 20px 0px;
 }
 
-.playerName {
+.playerNameRow {
   text-align: center;
   margin: 20px;
+  height: 60px;
+}
+
+#player1Name {
+  float: left;
+  margin-left: 80px;
+}
+
+#player2Name {
+  float: right;
+  margin-right: 80px;
+}
+
+.blinkEffect {
+  animation: infinite colourPulse 3s;
+}
+
+.fadeIn {
+  animation: fadeIn 2s;
+  /* animation-delay: 1s; */
+}
+
+#player1Score {
+  float: left;
+}
+
+#player2Score {
+  float: right;
+}
+
+.scoreRow {
+  margin: 20px;
+  height: 60px;
 }
 
 .text {
   text-align: center;
   margin: 30px;
+}
+
+@keyframes colourPulse {
+  0% {
+    color: black;
+    background-color: transparent;
+  }
+  50% {
+    color: rgb(90, 86, 82);
+    background-color: rgb(245, 57, 57);
+  }
+  100% {
+    color: black;
+    background-color: transparent;
+  }
 }
